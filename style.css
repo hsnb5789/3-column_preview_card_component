@@ -19,13 +19,8 @@ body {
 body {
     display: grid;
     place-items: center;
-    /* grid-column: ; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     max-height: 100vh;
-    padding: 50px;
-    /* font-size: 15px; */
+    padding:80px 50px;
 }
 
 main {
@@ -34,13 +29,11 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    /* border-radius: 10px 0 0 10px; */
     border-radius: 10px;
     overflow: hidden;
 }
 
 .container {
-    /* position: relative; */
     font-family: var(--font-family2);
     width: 300px;
 }
