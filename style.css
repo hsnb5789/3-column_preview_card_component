@@ -1,0 +1,123 @@
+:root {
+    /* colors */
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    /* Fonts */
+    --font-family1: 'Lexend Deca', sans-serif;
+    --font-family2: 'Big Shoulders Display', cursive;
+    /* --font-family3: 'Lexend Deca', sans-serif; */
+}
+
+head,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    /* grid-column: ; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    max-height: 100vh;
+    padding: 50px;
+    /* font-size: 15px; */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* border-radius: 10px 0 0 10px; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container {
+    /* position: relative; */
+    font-family: var(--font-family2);
+    width: 300px;
+}
+
+.sedans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--Bright_orange);
+    padding: 40px;
+}
+
+.suv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--Dark_cyan);
+    padding: 40px;
+}
+
+.luxuary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--Very_dark_cyan);
+    padding: 40px;
+}
+
+h1 {
+    font-weight: 700;
+    color: white;
+}
+
+p {
+    color: white;
+    font-family: var(--font-family1);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 80px;
+    opacity: 0.8;
+    padding: 0px 10px 0px 0px;
+}
+
+button {
+    color: var(--Bright_orange);
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 30px;
+    border-width: 0;
+    font-family: var(--font-family1);
+    cursor: pointer;
+}
+
+.suv button {
+    color: var(--Dark_cyan);
+}
+
+.luxuary button {
+    color: var(--Very_dark_cyan);
+}
+
+button:hover {
+    color: white;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    background: transparent;
+}
+
+@media (max-width:920px) {
+    main {
+        flex-direction: column;
+
+    }
+}
